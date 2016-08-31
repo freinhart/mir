@@ -1,0 +1,181 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+\usepackage[a4paper,lmargin=2cm,rmargin=1.5cm,tmargin=1.5cm,bmargin=1.5cm]{geometry}
+\usepackage[chorded]{songs}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{lastpage}
+\usepackage{nameref}
+\makeatletter
+\newcommand*{\currentname}{\@currentlabelname}
+\makeatother
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\currentname \hfill (\thepage)}
+\renewcommand{\footrulewidth}{1pt}
+
+\lstnewenvironment{lstsong}{\lstset{columns=flexible,basicstyle=\normalfont}}{}
+\lstnewenvironment{lsttab}{\lstset{columns=flexible,basicstyle=\ttfamily\footnotesize}}{}
+%\lstset{inputencoding=utf8}
+\lstset{
+	%basicstyle=\ttfamily\footnotesize,
+	keywordstyle=\bfseries,
+    showstringspaces=false,
+    morekeywords={Intro, Outro, Verse, Strophe, Chorus, Refrain, Prechorus, Bridge, Solo, Coda, Interlude, Riff, Chords, Part, Drums, Bass, Guitar},
+	literate={ä}{{\"a}}1 {ö}{{\"o}}1 {ü}{{\"u}}1 {Ä}{{\"A}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1 {ß}{{{\ss}}}1
+}
+
+\songcolumns{2}
+%\spenalty=-10000
+%\parindent0mm
+\afterpreludeskip=2pt% plus 1fil
+\beforepostludeskip=2pt% plus 1fil
+\sbarheight=0pt
+\noversenumbers
+\nosongnumbers
+
+\versesep=1em
+%\chorussep=0.5em
+
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage[linktocpage=true,colorlinks=false, pdfborder={0 0 0}]{hyperref}
+\titlecontents{section}
+[]             % left margin
+{}             % above code
+{}             % numbered format
+{}             % unnumbered format
+{$\qquad$ \thecontentspage}             % filler-page-format, e.g dots
+
+\begin{document}
+
+\pagestyle{empty}
+\renewcommand*\contentsname{My Songbook \hfill \normalfont \today}
+\tableofcontents
+\addtocontents{toc}{~\hfill\textbf{Page}\par}
+\newpage
+\pagestyle{fancy}
+\setcounter{page}{1}
+
+%\input{examples.tex}
+
+%% Queen
+\input{songs/TooMuchLoveWillKillYou.tex}
+\input{songs/DontStopMeNow.tex}
+%\input{songs/LetMeLive.tex}
+
+%% Jack Johnson
+\input{songs/AllAtOnce.tex}
+\input{songs/YouAndYourHeart.tex}
+\input{songs/Flake.tex}
+\input{songs/GoodPeople.tex}
+\input{songs/SupposedToBe.tex}
+\input{songs/Lullaby.tex}
+
+%% Deutsch
+\input{songs/DieZeitHeiltAlleWunder.tex}
+\input{songs/Moskau.tex}
+\input{songs/EinBisschenFrieden.tex}
+
+%% Kuschel
+\input{songs/WhenYouSayNothingAtAll.tex}
+\input{songs/Hallelujah.tex}
+\input{songs/Supergirl.tex}
+\input{songs/TheScientist.tex}
+\input{songs/IfLoveIsARedDress.tex}
+\input{songs/NeverSawBlueLikeThat.tex}
+
+%% Mixed
+\input{songs/BasketCase.tex}
+%\input{songs/BasketCase-GoogleTranslate.tex}
+\input{songs/YoureNotAlone.tex}
+\input{songs/AllSummerLong.tex}
+\input{songs/OpenRoad.tex}
+\input{songs/BuffaloSoldier.tex}
+\input{songs/WakeMeUp.tex}
+%\input{songs/FlyingInMySleep.tex}
+
+
+%% Oldies
+\input{songs/InTheMidnightHour.tex}
+\input{songs/ManicMonday.tex}
+\input{songs/Downtown.tex}
+\input{songs/JohnnyBGoode.tex}
+\input{songs/MemphisTennessee.tex}
+\input{songs/SweetLittleSixteen.tex}
+%\input{songs/BlueberryHill.tex}  %TODO
+%\input{songs/AllIReallyWantToDo.tex}  %TODO
+\input{songs/LonelyBoy.tex}
+%\input{songs/BarbaraAnn.tex} %TODO
+%\input{songs/TommyCanYouHearMe.tex}
+
+%% Rolling Stones
+\input{songs/MyGirl.tex}
+\input{songs/BackstreetGirl.tex}
+\input{songs/RideOnBaby.tex}
+\input{songs/LadyJane.tex}
+
+%% Cat Stevens
+\input{songs/WildWorld.tex}
+\input{songs/TheFirstCutIsTheDeepest.tex}
+\input{songs/PortobelloRoad.tex}
+\input{songs/TheWind.tex}
+\input{songs/MaybeYoureRight.tex}
+\input{songs/Bitterblue.tex}
+%\input{songs/IWishIWish.tex}
+
+%% ABBA
+\input{songs/MamaMia.tex}
+\input{songs/TropicalLoveland.tex}
+\input{songs/DoesYourMotherKnow.tex}
+\input{songs/TakeAChanceOnMe.tex}
+
+%% Country
+%\input{songs/RingOfFire.tex}  %TODO
+%\input{songs/ImALongWayFromHome.tex} %TODO
+\input{songs/WhyDoTheyLeave.tex}
+\input{songs/IDontKnow.tex}
+\input{songs/FallinAndFlying.tex}
+%\input{songs/HelloTrouble.tex}
+%\input{songs/InTheJailhouseNow.tex}
+%\input{songs/DoRightWoman.tex}
+%\input{songs/TimeHasToldMe.tex}
+
+%% Beatles
+\input{songs/InMyLife.tex}
+\input{songs/ImLookingThroughYou.tex}
+\input{songs/LetItBe.tex}
+\input{songs/TellMeWhatYouSee.tex}
+\input{songs/TheNightBefore.tex}
+\input{songs/YouLikeMeTooMuch.tex}
+\input{songs/INeedYou.tex}
+
+%% Guitar pieces
+\input{songs/Carulli-Valse.tex}
+\input{songs/Carulli-Andante.tex}
+\input{songs/Carulli-Andantino.tex}
+\input{songs/Paganini-AndantinoC.tex}
+\input{songs/Paganini-AndantinoD.tex}
+
+\begin{comment}
+Hard Day's Night
+Heute hier morgen dort
+RockNRoll Music
+Surfin USA
+My little sunshine
+
+Rolling Stones (Flowers): take it or leave it
+
+Inaudible Melodies, Posters, Bubble Toes, Mudfootball, Do You Remember, Home
+Return to sender
+\end{comment}
+
+\end{document}
+

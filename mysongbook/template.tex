@@ -1,0 +1,81 @@
+\documentclass[a4paper,margin=1cm,footskip=.5cm,12pt]{article}
+\usepackage[chorded]{songs}
+\usepackage{listings}
+\usepackage{graphicx}
+
+\lstnewenvironment{lstsong}{\lstset{columns=flexible}}{}
+
+\songcolumns{1}
+\spenalty=-10000
+\afterpreludeskip=2pt% plus 1fil
+\beforepostludeskip=2pt% plus 1fil
+\noversenumbers
+\nosongnumbers
+
+%\repchoruses
+
+\pagestyle{empty}
+
+\begin{document}
+
+\songsection{Some Song \hfill \normalfont Queen}
+\noindent\rule{\textwidth}{1pt}
+\begin{lstsong}
+Am                                 G
+And we played the first thing that came to our heads,
+F
+Just so happened to be,
+Am                   G             F
+The Best Song in the World, it was The Best Song in the World.
+\end{lstsong}
+\rule{\textwidth}{1pt}\newpage
+
+%\songsection{Jack Johnson}
+\songsection{Some Song \hfill \normalfont Queen}
+\begin{songs}{}
+%\beginsong{\vspace{-1.3em}Another Song}[by={Someone else}]%,
+%\endsong
+
+\beginsong{}
+%\beginsong{\vspace{-1.3em}Doxology}[by={Louis Bourgeois and Thomas Ken}]%,
+                     %sr={Revelation 5:13},
+                     %cr={Public domain.}]
+%cr=copyright
+
+\beginverse
+\nolyrics Intro: \[G] \[A] \[D]
+\endverse
+
+\beginverse\memorize
+\[G]Praise God, \[D] from \[Em]Whom \[Bm]all \[Em]bless\[D]ings \[G]flow;
+\[G]Praise Him, all \[D]crea\[Em]tures \[C]here \[G]be\[D]low;
+\[Em]Praise \[D]Him \[G]a\[D]bove, \[G]ye \[C]heav'n\[D]ly \[Em]host;
+\[G]Praise Fa\[Em]ther, \[D]Son, \[Am]and \[G/B G/C]Ho\[D]ly \[G]Ghost.
+\[C]A\[G]men.
+\endverse
+
+\vspace{1em}\noindent Chorus:\\[-1em]
+\beginchorus
+%\meter{6}{8}
+\meter{}{}
+|\[A]Alle|\[G]luia| \rep{4}
+\endchorus
+
+\transpose{2}
+\beginverse
+^Praise God, ^ from ^Whom \[Other]all ^bless^ings ^flow;
+\[G]Praise Him, all \[D]crea\[Em]tures \[C]here \[G]be\[D]low;
+\[Em]Praise \[D]Him \[G]a\[D]bove, \[G]ye \[C]heav'n\[D]ly \[Em]host;
+\[G]Praise Fa\[Em]ther, \[D]Son, \[Am]and \[G/B G/C]Ho\[D]ly \[G]Ghost.
+\[C]A\[G]men.
+\endverse
+\transpose{-2}
+
+\vspace{1cm}
+\gtab{A}{X02220:001230}
+\gtab{Am}{X02210}
+
+\endsong
+\end{songs}
+
+\end{document}
