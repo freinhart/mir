@@ -1,6 +1,7 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{textcomp}
 \usepackage{lmodern}
 \usepackage[ngerman]{babel}
 \usepackage[a4paper,lmargin=2cm,rmargin=1.5cm,tmargin=1.5cm,bmargin=1.5cm]{geometry}
@@ -46,13 +47,15 @@
 
 \usepackage{titlesec}
 \usepackage{titletoc}
-\usepackage[linktocpage=true,colorlinks=false, pdfborder={0 0 0}]{hyperref}
+\usepackage[linktocpage=true,linktoc=all,colorlinks=false, pdfborder={0 0 0}]{hyperref}
 \titlecontents{section}
 []             % left margin
 {}             % above code
 {}             % numbered format
 {}             % unnumbered format
 {$\qquad$ \thecontentspage}             % filler-page-format, e.g dots
+
+\renewcommand\texteuro{FIXME}
 
 \begin{document}
 
@@ -86,7 +89,15 @@
 \input{songs/DieZeitHeiltAlleWunder.tex}
 \input{songs/Moskau.tex}
 \input{songs/HeuteHierMorgenDort.tex}
+\input{songs/SchuldWarNurDerBossaNova.tex}
 \input{songs/EinBisschenFrieden.tex}
+%\input{songs/PuffTheMagicDragon.tex}
+\input{songs/PaffDerZauberdrache.tex}
+\input{songs/Marina.tex}
+
+%% Kinderlieder
+\input{songs/DieAffenRasenDurchDenWald.tex}
+\input{songs/OldMcDonaldHadAFarm.tex}
 
 %% Kuschel
 \input{songs/WhenYouSayNothingAtAll.tex}
@@ -107,6 +118,8 @@
 \input{songs/TheJoker.tex}
 \input{songs/LazySong.tex}
 \input{songs/MarryMe.tex}
+\input{songs/HaveYouEverSeenTheRain.tex}
+\input{songs/BornThisWay.tex}
 %\input{songs/WakeMeUp.tex}
 %\input{songs/FlyingInMySleep.tex}
 \input{songs/JesusDoesntWantMe.tex}
@@ -114,9 +127,7 @@
 \input{songs/LakeOfFire.tex}
 \input{songs/OnAPlain.tex}
 %\input{songs/WhereDidYouSleepLastNight.tex}
-%\input{songs/PuffTheMagicDragon.tex}
-\input{songs/PaffDerZauberdrache.tex}
-\input{songs/Marina.tex}
+
 
 %% Oldies
 \input{songs/InTheMidnightHour.tex}
@@ -183,6 +194,7 @@
 %\input{songs/TimeHasToldMe.tex}
 
 %% Beatles
+\input{songs/HardDaysNight.tex}
 \input{songs/InMyLife.tex}
 \input{songs/ImLookingThroughYou.tex}
 \input{songs/LetItBe.tex}
