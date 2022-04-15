@@ -1,0 +1,219 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+\usepackage[a4paper,lmargin=2cm,rmargin=1.5cm,tmargin=1.5cm,bmargin=1.5cm]{geometry}
+\usepackage[chorded]{songs}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{lastpage}
+\usepackage{nameref}
+\makeatletter
+\newcommand*{\currentname}{\@currentlabelname}
+\makeatother
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\currentname \hfill (\thepage)}
+\renewcommand{\footrulewidth}{1pt}
+
+\lstnewenvironment{lstsong}{\lstset{columns=flexible,basicstyle=\normalfont}}{}
+\lstnewenvironment{lsttab}{\lstset{columns=flexible,basicstyle=\ttfamily\footnotesize}}{}
+%\lstset{inputencoding=utf8}
+\lstset{
+	%basicstyle=\ttfamily\footnotesize,
+	keywordstyle=\bfseries,
+    showstringspaces=false,
+    morekeywords={Intro, Outro, Verse, Strophe, Chorus, Refrain, Prechorus, Bridge, Solo, Coda, Interlude, Riff, Chords, Part, Drums, Bass, Guitar},
+	literate={ä}{{\"a}}1 {ö}{{\"o}}1 {ü}{{\"u}}1 {Ä}{{\"A}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1 {ß}{{{\ss}}}1
+}
+
+\songcolumns{2}
+%\spenalty=-10000
+%\parindent0mm
+\afterpreludeskip=2pt% plus 1fil
+\beforepostludeskip=2pt% plus 1fil
+\sbarheight=0pt
+\noversenumbers
+\nosongnumbers
+
+\versesep=1em
+%\chorussep=0.5em
+
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage[linktocpage=true,linktoc=all,colorlinks=false, pdfborder={0 0 0}]{hyperref}
+\titlecontents{section}
+[]             % left margin
+{}             % above code
+{}             % numbered format
+{}             % unnumbered format
+{$\qquad$ \thecontentspage}             % filler-page-format, e.g dots
+
+\renewcommand\texteuro{FIXME}
+
+\begin{document}
+
+\pagestyle{empty}
+\renewcommand*\contentsname{My Harp Book \hfill \normalfont \today}
+\tableofcontents
+\addtocontents{toc}{~\hfill\textbf{Page}\par}
+\newpage
+\pagestyle{fancy}
+\setcounter{page}{1}
+
+\begin{comment}
+\input{examples.tex}
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\songsection{Twinkle, twinkle little star \hfill \normalfont Misc}
+\noindent\rule{\columnwidth}{1pt}
+\begin{lstsong}
+4   4    6   6  -6 -6   6
+Twinkle, twinkle little star.
+
+-5 -5  5  5  -4   -4   4
+How I wonder what you are.
+
+6  6 -5  -5    5    5 -4
+Up above the world so high,
+
+ 6   6 -5  -5  5  5   -4
+Like a di'mond in the sky.
+
+ 4   4    6  6   -6 -6    6
+Twinkle, twinkle little star.
+
+-5 -5  5 5   -4    -4  4      
+How I wonder what you are.
+\end{lstsong}
+\newpage
+
+
+\songsection{Hamborger Veermaster \hfill \normalfont Misc}
+\noindent\rule{\columnwidth}{1pt}
+\begin{lstsong}
+6 4 5 5 6 7 7 -6 6 6 6 5
+Ick heff mol en Hamborger Veermaster sehn,
+
+4 -4 5 -4 4 -4 5 -4
+To my hooda! To my hooda!
+
+6 4 4 5 6 7 7 -6 -6 6 5
+De Masten so scheef as den Schipper sien Been,
+
+4 -4 5 -4 5 -4 4
+ To my hooda hooda ho!
+
+4 5 6 7 -7 -6 -7 7 -6 6
+Blow boys blow for Californio,
+
+7 7 -6 -6 -6 -6
+There is plenty of Gold,
+
+-6 -6 6 5
+so I've been told
+
+4 -4 5 6 6 5 -4 4
+On the banks of Sacramento.
+\end{lstsong}
+\newpage
+
+
+\songsection{He´s a pirate \hfill \normalfont Hans Zimmer}
+\noindent\rule{\columnwidth}{1pt}
+\begin{multicols}{2}
+\begin{lstsong}
+Part 1
+4 -4 -4 -4 5 -5 -5 -5 6 5 5 -4 4 4 -4
+
+4 -4 -4 -4 5 -5 -5 -5 6 5 5 -4 4 -4
+
+4 -4 -4 -4 5 -5 -5 -5 6 -6 -6 6 -5 6 4
+
+4 -5 -5 6 -6 -4
+
+-4 -5 5 5 -4 4 -4
+
+4 -4 -4 -4 5 -5 -5 -5 6 5 5 -4 4 4 -4
+
+4 -4 -4 -4 5 -5 -5 -5 6 5 5 -4 4 -4
+
+4 -4 -4 -4 5 -5 -5 -5 6 -6 -6 6 -5 6 4
+
+4 -5 -5 6 -6 -4
+
+-4 -5 5 5 -4 4 -4
+
+-4 5 -5 -5 6
+
+-6 -5 -4 -3
+
+-7 -5 -4 -3
+\end{lstsong}\vfill\columnbreak\begin{lstsong}
+Part 2:
+-4 5 -5 6 -6 6 -5 5 -5 6 -6 6
+
+-5 6 -6 6 -5 5 -5 5 -4 5 4 -4
+
+-4 5 -5 5 -5 6 -5 6 -6 6 -5 -4
+
+-4 5 -5 6 -6 -8 -4 -5 5 -5 5 -4
+
+-4 -3" -4 5 -3" 5 -5 5 -4 5
+
+-4 5 -5 5 -4 -4" -5
+
+-3" 3 -2 3 -3" -3 -4
+
+-4 4 -4 5 -5 -4 -5 5 4 -4
+
+-4 4 -4 5 -5 6 -6 5 4
+
+-4 4 -4 5 -5 -4 -5 5 4 -4
+
+-4 4 -4 5 -5 6 -6 -7 -8"
+
+-4 5 -5 6 -6 6 -5 5 -5 6 -6 6
+
+-5 6 -6 6 -4 -4"
+
+-4 -4 -4 5 -4 -4 5 -4
+\end{lstsong}
+\end{multicols}
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{comment}
+\songsection{Twinkle, twinkle little star \hfill \normalfont Misc}
+\noindent\rule{\columnwidth}{1pt}
+\begin{multicols}{2}
+\begin{lstsong}
+Test
+\end{lstsong}\vfill\columnbreak\begin{lstsong}
+Test
+\end{lstsong}
+\end{multicols}
+\newpage
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+

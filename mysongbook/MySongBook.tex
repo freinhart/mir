@@ -10,9 +10,13 @@
 \usepackage{multicol}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
+\usepackage{pdfpages}
 \usepackage{comment}
 \usepackage{lastpage}
 \usepackage{nameref}
+
+\graphicspath{ {./} {./../DasDing/} }
+
 \makeatletter
 \newcommand*{\currentname}{\@currentlabelname}
 \makeatother
@@ -29,7 +33,7 @@
 	%basicstyle=\ttfamily\footnotesize,
 	keywordstyle=\bfseries,
     showstringspaces=false,
-    morekeywords={Intro, Outro, Verse, Strophe, Chorus, Refrain, Prechorus, Bridge, Solo, Coda, Interlude, Riff, Chords, Part, Drums, Bass, Guitar},
+    morekeywords={Intro, Outro, Verse, Strophe, Chorus, Refrain, Prechorus, Bridge, Solo, Coda, Interlude, Riff, Chords, Part, Drums, Bass, Guitar, Instrumental},
 	literate={ä}{{\"a}}1 {ö}{{\"o}}1 {ü}{{\"u}}1 {Ä}{{\"A}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1 {ß}{{{\ss}}}1
 }
 
@@ -111,7 +115,10 @@
 %% Kuschel
 \input{songs/WhenYouSayNothingAtAll.tex}
 \input{songs/Hallelujah.tex}
+\input{songs/ItMustHaveBeenLove.tex}
+\input{songs/BringItOnHomeToMe.tex}
 \input{songs/TheseStreets.tex}
+\input{songs/TumblingDown.tex}
 \input{songs/Supergirl.tex}
 \input{songs/TheScientist.tex}
 \input{songs/Yellow.tex}
@@ -124,6 +131,7 @@
 \input{songs/FOD.tex}
 \input{songs/HavingABlast.tex}
 \input{songs/BasketCase.tex}
+\input{songs/SummerOf69.tex}
 %\input{songs/BasketCase-GoogleTranslate.tex}
 \input{songs/Roar.tex}
 \input{songs/YoureNotAlone.tex}
@@ -133,6 +141,7 @@
 \input{songs/LazySong.tex}
 \input{songs/MarryMe.tex}
 \input{songs/HaveYouEverSeenTheRain.tex}
+\input{songs/SomedayNeverComes.tex}
 \input{songs/BornThisWay.tex}
 \input{songs/AlwaysRememberUsThisWay.tex}
 %\input{songs/WakeMeUp.tex}
@@ -156,6 +165,8 @@
 % Reelin and rockin
 \input{songs/RockAroundTheClock.tex}
 \input{songs/MemphisTennessee.tex}
+\input{songs/CaliforniaGirls.tex}
+\input{songs/HelpMeRhonda.tex}
 \input{songs/SurfingUSA.tex}
 \input{songs/SurfingSafari.tex}
 %\input{songs/BlueberryHill.tex}  %TODO
@@ -170,7 +181,7 @@
 \input{songs/BuffaloSoldier.tex}
 
 %% The Who
-\input{songs/Substitute.tex}
+%\input{songs/Substitute.tex}
 \input{songs/SqueezeBox.tex}
 \input{songs/TommyCanYouHearMe.tex}
 %\input{songs/BarbaraAnn.tex} %TODO
@@ -199,6 +210,7 @@
 \input{songs/TakeAChanceOnMe.tex}
 
 %% Country
+\input{songs/OhSusanna.tex}
 \input{songs/RingOfFire.tex}
 \input{songs/IDontKnowWhereImBound.tex}
 \input{songs/FolsomPrisonBlues.tex}
@@ -212,6 +224,8 @@
 %\input{songs/TimeHasToldMe.tex}
 
 %% Beatles
+\input{songs/WithALittleHelpFromMyFriends.tex}
+\input{songs/NowhereMan.tex}
 \input{songs/HardDaysNight.tex}
 \input{songs/InMyLife.tex}
 \input{songs/ImLookingThroughYou.tex}
@@ -236,16 +250,29 @@
 \input{songs/Sunset.tex}
 
 \begin{comment}
-Hard Day's Night
 My little sunshine
-
 Paolo Nutini: Tumbling Down (live)
-
 Rolling Stones (Flowers): take it or leave it
-
-Do You Remember
 Return to sender
 \end{comment}
 
+\includepdf[pages=1]{If you want to sing out sing out.pdf}
+\includepdf[pages=1]{Moonshadow.pdf}
+\includepdf[pages=1]{Father and son.pdf}
+
+\includepdf[pages=1]{No woman no cry.pdf}
+\includepdf[pages=1]{Johnny B Good.pdf}
+%\includepdf[pages=1]{Annie's song.pdf}
+\includepdf[pages=1]{Leaving on a jet plane.pdf}
+\includepdf[pages=1]{Love is all around.pdf}
+\includepdf[pages=1]{Lemon tree.pdf}
+\includepdf[pages=1]{My Bonnie is over the ocean.pdf}
+\includepdf[pages=1]{Hey Pippi Langstrumpf.pdf}
+%\includepdf[pages=1]{Probiers mal mit Gemütlichkeit.pdf}
+
+
+%\songsection{Chords}
+\includepdf[pages=1]{Das Ding Akkorde-1.pdf} %trim=6cm 1cm 6cm 0.5cm, clip
+\includepdf[pages=1,angle=-1]{Das Ding Akkorde-2.pdf} %angle=5
 \end{document}
 
