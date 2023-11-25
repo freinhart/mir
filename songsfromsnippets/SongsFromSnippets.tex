@@ -1,0 +1,115 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage[ngerman]{babel}
+\usepackage[a4paper,lmargin=2cm,rmargin=1.5cm,tmargin=1.5cm,bmargin=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{lastpage}
+\usepackage{nameref}
+
+\graphicspath{ {./} {C:\\Users\\Felix Reinhart\\Desktop\\cutframes\\output/} }
+
+\makeatletter
+\newcommand*{\currentname}{\@currentlabelname}
+\makeatother
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\currentname \hfill (\thepage)}
+\renewcommand{\footrulewidth}{1pt}
+
+
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage[linktocpage=true,linktoc=all,colorlinks=false, pdfborder={0 0 0}]{hyperref}
+\titlecontents{section}
+[]             % left margin
+{}             % above code
+{}             % numbered format
+{}             % unnumbered format
+{$\qquad$ \thecontentspage}             % filler-page-format, e.g dots
+
+\renewcommand\texteuro{FIXME}
+
+\begin{document}
+\pagestyle{fancy}
+
+%[trim={left bottom right top},clip]
+
+\begin{comment}
+\setcounter{page}{1}
+\songsection{Saturday Night Shuffle \hfill \normalfont Doc Watson}
+\noindent\rule{\columnwidth}{1pt}
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{SaturdayNightShuffle/out001.jpg}
+\includegraphics[width=\textwidth]{SaturdayNightShuffle/out002.jpg}
+\includegraphics[width=\textwidth]{SaturdayNightShuffle/out003.jpg}
+\includegraphics[width=\textwidth,trim={0 0 0 3px},clip]{SaturdayNightShuffle/out004.jpg}
+\includegraphics[width=\textwidth,trim={0 0 0 10px},clip]{SaturdayNightShuffle/out006.jpg}
+\includegraphics[width=\textwidth]{SaturdayNightShuffle/out007.jpg}
+\includegraphics[width=\textwidth]{SaturdayNightShuffle/out008.jpg}
+\includegraphics[width=\textwidth,trim={0 0 0 10px},clip]{SaturdayNightShuffle/out009.jpg}
+\includegraphics[width=\textwidth,trim={0 0 0 10px},clip]{SaturdayNightShuffle/out010.jpg}
+\includegraphics[width=\textwidth,trim={0 0 0 10px},clip]{SaturdayNightShuffle/out011.jpg}
+\includegraphics[width=\textwidth]{SaturdayNightShuffle/out012.jpg}
+\includegraphics[width=\textwidth]{SaturdayNightShuffle/out013.jpg}
+\includegraphics[width=\textwidth]{SaturdayNightShuffle/out015.jpg}
+\end{figure}
+\newpage
+\begin{figure}[t!]
+\includegraphics[width=\textwidth,trim={0 0 0 5px},clip]{SaturdayNightShuffle/out016.jpg}
+\includegraphics[width=\textwidth]{SaturdayNightShuffle/out017.jpg}
+\includegraphics[width=\textwidth]{SaturdayNightShuffle/out018.jpg}
+\includegraphics[width=\textwidth]{SaturdayNightShuffle/out020.jpg}
+\includegraphics[width=\textwidth,trim={0 0 0 5px},clip]{SaturdayNightShuffle/out021.jpg}
+\includegraphics[width=\textwidth]{SaturdayNightShuffle/out022.jpg}
+\includegraphics[width=\textwidth]{SaturdayNightShuffle/out023.jpg}
+\includegraphics[width=\textwidth]{SaturdayNightShuffle/out025.jpg}
+\includegraphics[width=\textwidth]{SaturdayNightShuffle/out026.jpg}
+\end{figure}
+%\vspace{\fill}
+%\\\vfill
+\vspace*{\fill}
+\end{comment}
+
+
+%\begin{comment}
+\newpage
+\setcounter{page}{1}
+\songsection{Windy \& Warm \hfill \normalfont Chet Atkins}
+\noindent\rule{\columnwidth}{1pt}
+\begin{figure}[h!]
+\includegraphics[width=0.97\textwidth,trim={0 0 0 5px},clip]{WindyAndWarm/out001.jpg}
+\includegraphics[width=0.97\textwidth,trim={0 0 0 5px},clip]{WindyAndWarm/out003.jpg}
+\includegraphics[width=0.97\textwidth,trim={0 0 0 5px},clip]{WindyAndWarm/out007.jpg}
+\includegraphics[width=0.97\textwidth,trim={0 0 0 5px},clip]{WindyAndWarm/out009.jpg}
+\includegraphics[width=0.97\textwidth,trim={0 0 0 5px},clip]{WindyAndWarm/out011.jpg}
+\includegraphics[width=0.97\textwidth,trim={0 0 0 18px},clip]{WindyAndWarm/out013.jpg}
+\includegraphics[width=0.97\textwidth,trim={0 0 0 5px},clip]{WindyAndWarm/out015.jpg}
+\includegraphics[width=0.97\textwidth,trim={0 0 0 18px},clip]{WindyAndWarm/out018.jpg}
+\includegraphics[width=0.97\textwidth,trim={0 0 0 18px},clip]{WindyAndWarm/out020.jpg}
+\includegraphics[width=0.97\textwidth,trim={0 0 0 5px},clip]{WindyAndWarm/out022.jpg}
+\includegraphics[width=0.97\textwidth,trim={0 0 0 5px},clip]{WindyAndWarm/out023.jpg}
+\includegraphics[width=0.97\textwidth,trim={0 0 0 18px},clip]{WindyAndWarm/out025.jpg}
+\end{figure}
+\vspace*{\fill}
+%\end{comment}
+
+\end{document}
+
+\begin{comment}
+\includegraphics[width=\textwidth]{out001.jpg}
+\includegraphics[width=\textwidth]{out002.jpg}
+\includegraphics[width=\textwidth]{out003.jpg}
+\includegraphics[width=\textwidth]{out004.jpg}
+\includegraphics[width=\textwidth]{out005.jpg}
+\includegraphics[width=\textwidth]{out006.jpg}
+\includegraphics[width=\textwidth]{out007.jpg}
+\includegraphics[width=\textwidth]{out008.jpg}
+\includegraphics[width=\textwidth]{out009.jpg}
+\includegraphics[width=\textwidth]{out010.jpg}
+\end{comment}
